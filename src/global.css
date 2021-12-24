@@ -1,0 +1,62 @@
+@font-face {
+  font-family: CoinbaseDisplay;
+  src: url("./assets/fonts/CoinbaseDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: CoinbaseDisplay;
+  src: url("./assets/fonts/CoinbaseDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: CoinbaseSans;
+  src: url("./assets/fonts/CoinbaseSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: CoinbaseSans;
+  src: url("./assets/fonts/CoinbaseSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: CoinbaseText;
+  src: url("./assets/fonts/CoinbaseText-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: CoinbaseText;
+  src: url("./assets/fonts/CoinbaseText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --primary: rgb(0, 82, 255);
+  --text: rgb(5, 15, 25);
+  --btn-radius: 4px;
+  --line: rgba(91, 97, 110, 0.2);
+  --gray100: 10 11 13;
+  --gray60: 91 97 110;
+  --positive: rgb(9 133 81);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: CoinbaseSans, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}

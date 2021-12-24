@@ -1,32 +1,50 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Navbar />
+    <router-view class="app-main" />
   </div>
 </template>
-
+<script>
+import Navbar from "@/components/Navbar.vue";
+export default {
+  name: "App",
+  components: {
+    Navbar,
+  },
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+.btn {
+  border: none;
+  padding: 10px 12px;
+  font-family: CoinbaseSans;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.btn-primary {
+  border: 1px solid rgb(0, 82, 255);
+  background-color: var(--primary);
+  padding: 10px 12px;
+  color: white;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.btn-secondary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: white;
+}
+.list {
+  list-style: none;
+}
+.app-main {
+  padding: 100px 0 0;
+  width: 100%;
 }
 </style>
